@@ -1,64 +1,58 @@
 # SkinTect
 
-**Real-Time Allergen Detection in Cosmetic Products Using OCR, Deep Learning, and NLP**
-
-SkinTect is a real-time allergen detection system that empowers users—especially those with allergies or sensitive skin—to make informed decisions about cosmetic products. Using a combination of OCR, NLP, and clustering algorithms, the system analyzes ingredient labels from cosmetic products to identify potential allergens, harmful chemical interactions, and provide personalized product recommendations.
-
----
-
-## Project Overview
-
-**SkinTect** addresses the limitations of barcode scanners and static allergen databases by offering:
-
-- Real-time ingredient label analysis from images
-- Allergen detection using BioBERT (NLP)
-- Chemical interaction detection for harmful ingredient combinations
-- Personalized recommendations based on user allergen profiles
-- Fast processing with a target response time of under 2 seconds
+**SkinTect** is a real-time allergen detection system for cosmetic products using OCR, deep learning, and natural language processing. It extracts ingredient information from product labels, identifies allergens using BioBERT, and provides personalized product recommendations through clustering algorithms.
 
 ---
 
 ## Technologies Used
 
-- **YOLOv5** – Text detection from cosmetic labels
-- **CRNN** – Text recognition for OCR
-- **BioBERT** – Named Entity Recognition for allergen detection
-- **K-Means + Hierarchical Clustering** – Personalized recommendations
-- **Python**, **OpenCV**, **PyTorch**, **Transformers**, **Scikit-learn**
+| Module          | Technology                |
+|-----------------|---------------------------|
+| Text Detection  | YOLOv5 (CNN)              |
+| Text Recognition| CRNN (CNN + RNN + CTC)    |
+| NLP Analysis    | BioBERT (NER & Parsing)   |
+| Frontend        | HTML5, CSS3               |
+| Backend         | Python (Flask / FastAPI)  |
 
 ---
 
-## Repository Structure
-
-```plaintext
-SkinTect/
-│
-├── README.md
-├── .gitignore
-├── docs/                    # Reports and documentation
-│   └── sprint-1/
-│   └── sprint-2/
-│
-├── models/                  # Pretrained or fine-tuned models
-│   ├── yolo/
-│   ├── crnn/
-│   └── biobert/
-│
-├── modules/                 # Functional modules
-│   ├── ocr/
-│   ├── allergen_detection/
-│   ├── clustering/
-│   └── chemical_interaction/
-│
-├── ui/                      # User interface files
-├── scripts/                 # Evaluation, testing scripts
-└── requirements.txt         # Project dependencies
+## Project Structure
 ```
-## Sprint Planning
-Sprint tasks, assignees, durations, and story points are documented in our Sprint Planning Sheet and are aligned with out Gantt chart and project milestones.
+SkinTect/
+├── app.py # Main application server
+├── requirements.txt # Python dependencies
+├── best.pt # Trained YOLOv5 model
+├── allergen_detector.py # Main logic for detection and analysis
+├── allergen_dictionary.json # List of known allergens
+├── reverse_synonym_index.json # NLP synonym mapping
+├── final_biobert_model/ # BioBERT model & tokenizer
+│ ├── config.json
+│ ├── model.safetensors
+│ └── ...
+├── html/ # Web interface
+│ ├── Homepage.html
+│ ├── scanner.html
+│ └── ...
+├── yolov5/ # YOLOv5 local code
+└── .gitignore
+```
 
-## Team Members
-* Maria Consuelo Abalos Jr.
-* Princess Lucille Acnam
-* Byvien Dy
-* Ma. Janna Malangen
+---
+
+## Getting Started
+
+### 1. Clone the repository
+git clone https://github.com/your-username/SkinTect.git
+cd SkinTect
+
+### 2. Set up a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+
+### 3. Install dependencies
+py -3.9 -m pip install -r requirements.txt
+
+### 4. Run the app
+py -3.9 app.py
+
+
