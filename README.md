@@ -1,6 +1,6 @@
 # SkinTect
 
-**SkinTect** is a real-time allergen detection system for cosmetic products using OCR, deep learning, and natural language processing. It extracts ingredient information from product labels, identifies allergens using BioBERT, and provides personalized product recommendations through clustering algorithms.
+**SkinTect** is a real-time allergen detection system for cosmetic products using OCR and Natural Language Processing. It extracts ingredient information from product labels and identifies allergens using BioBERT.
 
 ---
 
@@ -38,6 +38,8 @@ SkinTect/
 ```
 Some files can't be upladed due to file size limitation. To compensate for this, here are links to the said files:
 NLP Fine-tuned Model: https://drive.google.com/drive/folders/1mYosogc0y3JRjavnRWnjQTf_q11XQVnV?usp=sharing
+
+Note: Unzip files
 
 ---
 
