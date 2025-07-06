@@ -6,7 +6,7 @@
 
 ## Technologies Used
 
-| Module          | Technology                |
+| **Module**          | **Technology**                |
 |-----------------|---------------------------|
 | Text Detection  | YOLOv5 (CNN)              |
 | Text Recognition| CRNN (CNN + RNN + CTC)    |
