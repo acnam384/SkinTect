@@ -36,6 +36,8 @@ SkinTect/
 ├── yolov5/ # YOLOv5 local code
 └── .gitignore
 ```
+Some files can't be upladed due to file size limitation. To compensate for this, here are links to the said files:
+NLP Fine-tuned Model: https://drive.google.com/drive/folders/1mYosogc0y3JRjavnRWnjQTf_q11XQVnV?usp=sharing
 
 ---
 
