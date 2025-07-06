@@ -1,0 +1,926 @@
+{
+  "Water": {
+    "synonyms": [
+      "AQUA"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Phenoxyethanol": {
+    "synonyms": [
+      "NSC-1864",
+      "STR04582",
+      "TOX21_202111",
+      "TOX21_111002",
+      "TOX21_113532",
+      "Z426194440",
+      "Phenoxyethanolum",
+      "2-Phenoxyethanol"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Glycerin": {
+    "synonyms": [],
+    "risk": "Low",
+    "reason": ""
+  },
+  "Fragrance": {
+    "synonyms": [
+      "PARFUM"
+    ],
+    "risk": "High",
+    "description": "Could cause reactive behavior and trigger migraines, allergy symptoms, asthma, chronic lung disease and other health conditions."
+  },
+  "Disodium Edta": {
+    "synonyms": [
+      "ETHYLENEDIAMINETETRACETIC ACID DISODIUM SALT",
+      "DISODIUM ETHYLENEDIAMINE-TETRAACETATE",
+      "DB14600",
+      "MCULE-3011053235",
+      "CTK8E5804",
+      "E386",
+      "D03945",
+      "ETHYLENEDIAMINETETRA-ACETIC ACID DISODIUM SALT"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Niacinamide": {
+    "synonyms": [
+      "SR-01000721872-4",
+      "Q-201470",
+      "F2173-0513",
+      "AC-907/25014114",
+      "SR-01000721872-5",
+      "Q192423",
+      "A845925",
+      "SR-01000721872-3",
+      "vitamin B3",
+      "nicotinamide"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Butylene Glycol": {
+    "synonyms": [],
+    "risk": "Low"
+  },
+  "Dimethicone": {
+    "synonyms": [
+      "ANW-15818",
+      "CO9816",
+      "MFCD00132673"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Silica": {
+    "synonyms": [
+      "Silica, Amorphous",
+      "98253-25-9"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Bht": {
+    "synonyms": [
+      "Butylated Hydroxy Toluene",
+      "Butylhydroxytoluenum",
+      "2,6-Di-Tert-Butyl-P-Cresol",
+      "F0001-0395",
+      "Z955123624",
+      "WLN: 1X1 & 1 & R BQ E1 CX1 & 1 & 1"
+    ],
+    "risk": "High",
+    "description": ""
+  },
+  "Tocopheryl Acetate": {
+    "synonyms": [
+      "COPHEROL 12250",
+      "AC1L3BMH",
+      "VITAMIN E ACETATE, ((2R*(4R*,8R*))-(+-))-ISOMER",
+      "D-ALPHA TOCOPHERYL ACETATE",
+      "DL-ALPHA-TOCOPHEROLACETATE",
+      "VITAMIN E ACETATE, (2R-(2R*(4R*,8R*)))-ISOMER",
+      "AC1Q1PB2",
+      "26243-95-8",
+      "O-ACETYL-|A-TOCOPHEROL"
+    ],
+    "risk": "Moderate",
+    "description": "Enhanced skin absorption and Contamination concerns (HYDROQUINONE)"
+  },
+  "Glyceryl Stearate": {
+    "synonyms": [
+      "POLYGLYCERYL STEARATE",
+      "CTK3J7265",
+      "EINECS 234-325-6",
+      "POLYGLYCERYL-2 SESQUISTEARATE",
+      "OCTADECANOIC ACID;PROPANE-1,2,3-TRIOL",
+      "68784-20-3",
+      "BS-16914",
+      "1,2,3-PROPANETRIOL, HOMOPOLYMER, OCTADECANOATE",
+      "9009-32-9",
+      "SCHEMBL13465"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Sodium Benzoate": {
+    "synonyms": [
+      "Natrii Benzoas",
+      "J-519752"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Menthol": {
+    "synonyms": [
+      "N1950",
+      "CYCLOHEXANOL, (1.ALPHA.,2.BETA.,5.ALPHA.)-",
+      "S5868",
+      "L-MENTHOL|LEVOMENTHOL|MENTHOMENTHOL|MENTHACAMPHOR",
+      "C00400",
+      "(1R,2S,5R)-(-)-MENTHOL, SYNTHETIC PELLETS",
+      "AB00052320_02",
+      "114376-98-6",
+      "(1R,2S,5R)-(-)-MENTHOL, >=99%, SUBLIMED",
+      "Q407418",
+      "dl-menthol",
+      "l-menthol",
+      "Mentholum",
+      "Cyclohexanol",
+      "5-Methyl-2-(1-Methylethyl)-"
+    ],
+    "risk": "High",
+    "description": ""
+  },
+  "Tetrasodium Edta": {
+    "synonyms": [
+      "CHEMBL2104344",
+      "C10H12N2NA4O8",
+      "EC 200-573-9",
+      "TETRASODIUM ETHYLENEDIAMINETETRAACETATE HYDRATE",
+      "EDTA 4NA",
+      "CTK2F2895"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Stearic Acid": {
+    "synonyms": [
+      "STEARIC ACID, SAJ FIRST GRADE, >=90.0%",
+      "BB 0268543",
+      "I727",
+      "STEARIC ACID, PURISS., >=98.5% (GC)",
+      "CD7993EA-AD14-452A-A907-33376CC98790"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Xanthan Gum": {
+    "synonyms": [
+      "XANTHAN",
+      "POLYSACCHARIDE B 1459",
+      "BIOZAN R",
+      "GUM XANTHAN",
+      "XC POLYMER",
+      "E415",
+      "CORN SUGAR GUM"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Ci 19140": {
+    "synonyms": [
+      "Fd&C Yellow No. 5 (Ci 19140)",
+      "TARTRAZINE, DYE CONTENT >=85 %",
+      "TARTRAZINE, FOR MICROSCOPY (HIST.)",
+      "AKOS016010270",
+      "AKOS015903034",
+      "TARTRAZINE (C.I. 19140)",
+      "TARTRAZINE, ANALYTICAL STANDARD",
+      "TARTRAZINE, P.A., 95-105%",
+      "KS-00000YDJ"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Peg-40 Hydrogenated Castor Oil": {
+    "synonyms": [
+      "POLYOXYETHYLENE (40) HYDROGENATED CASTOR OIL",
+      "HYDROGENATED CASTOR OIL, ETHOXYLATED",
+      "HYDROGENATED CASTOR OIL ETHOXYLATE",
+      "ARLATONE G",
+      "CASTOR OIL, HYDROGENATED, ETHOXYLATED",
+      "CREMOPHOR RH",
+      "NIKKOL HCO",
+      "PEG HYDROGENATED CASTOR OIL",
+      "POLYETHYLENE GLYCOL HYDROGENATED CASTOR OIL",
+      "POLYOXYETHYLENE HYDROGENATED CASTOR OIL"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Cetyl Alcohol": {
+    "synonyms": [
+      "S4173",
+      "TOX21_111609",
+      "ZINC8214519",
+      "HY-B1465",
+      "ANW-28459",
+      "KS-00000V9G",
+      "LMFA05000061",
+      "TOX21_300325",
+      "EINECS 252-964-9"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Propylene Glycol": {
+    "synonyms": [
+      "1,2-PROPANEDIOL, SAJ FIRST GRADE, >=99.0%",
+      "1,2-PROPANEDIOL, P.A., ACS REAGENT, 99.5%",
+      "D00078",
+      "C00583",
+      "1,2-PROPANEDIOL 100 MICROG/ML IN ACETONITRILE",
+      "1,2-PROPANEDIOL, TESTED ACCORDING TO PH.EUR."
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Sodium Hydroxide": {
+    "synonyms": [
+      "CHEMBL2105794",
+      "SODIUM HYDROXIDE, 40% SOLUTION",
+      "CTK0H4682",
+      "SODIUM HYDROXIDE, SOLID [UN1823] [CORROSIVE]",
+      "Q102769",
+      "J-005935",
+      "SODIUM HYDROXIDE, SOLUTION [UN1824] [CORROSIVE]",
+      "SODIUM HYDROXIDE, TECHNICAL, 30% SOLUTION IN WATER",
+      "SODIUM HYDROXIDE, 10.0N STANDARDIZED SOLUTION"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Ethylhexylglycerin": {
+    "synonyms": [
+      "ETHYLHEXYLGLYCERIN",
+      "1,2-PROPANEDIOL, 3-((2-ETHYLHEXYL)OXY)-",
+      "OCTOXYGLYCERIN",
+      "3-((2-ETHYLHEXYL)OXY)- 1,2-PROPANEDIOL",
+      "ETHYLHEXYGLYCERIN",
+      "1,2-PROPANEDIOL, 3-(2-ETHYLHEXYLOXY)"
+    ],
+    "risk": "Moderate",
+    "description": "Non-reproductive organ system toxicity (low_moderate), Ecotoxicology (low), and Irritation (skin, eyes, or lungs) (high)"
+  },
+  "Cetearyl Alcohol": {
+    "synonyms": [
+      "HEXADECAN-1-OL;OCTADECAN-1-OL",
+      "EC 267-008-6",
+      "LANETTE O",
+      "CETOSTEARYL ALCOHOL [NF]",
+      "2DMT128M1S",
+      "8005-44-5",
+      "SCHEMBL1091511",
+      "CETYL-STEARYL ALCOHOL (50/50)",
+      "CETYL ALCOHOL: STEARYL ALCOHOL: CETEARYL ALCOHOL"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Lauric Acid": {
+    "synonyms": [
+      "ST023796",
+      "FT-0695772",
+      "CS-0015078",
+      "L0011",
+      "DODECANOIC ACID, >=99% (GC/TITRATION)",
+      "DODECANOIC ACID, PURUM, >=96.0% (GC)",
+      "LAU",
+      "LAURIC ACID, NATURAL, >=98%, FCC, FG",
+      "A16350"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Potassium Hydroxide": {
+    "synonyms": [
+      "POTASSIUM HYDROXIDE, TECHNICAL, >=85%, LUMPS",
+      "D01168",
+      "POTASSIUM HYDROXIDE, 45% W/V AQUEOUS SOLUTION",
+      "POTASSIUM HYDROXIDE REAGENT GRADE 1KG",
+      "POTASSIUM HYDROXIDE, 10% W/V AQUEOUS SOLUTION",
+      "POTASSIUM HYDROXIDE, 25% W/V AQUEOUS SOLUTION",
+      "C12568",
+      "POTASSIUM HYDROXIDE, 50% W/V AQUEOUS SOLUTION",
+      "POTASSIUM HYDROXIDE, 30% W/V AQUEOUS SOLUTION"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Cocamidopropyl Betaine": {
+    "synonyms": [
+      "W-105096",
+      "Q1090054"
+    ],
+    "risk": "Moderate",
+    "description": "Use restrictions (high) and Contamination concerns (3-DIMETHYLAMINOPROPYLAMINE, COCAMIDOPROPYL DIMETHYLAMINE, NITROSAMINES)"
+  },
+  "Palmitic Acid": {
+    "synonyms": [
+      "F0001-1488",
+      "Z955123552",
+      "SR-01000944716-2"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Myristic Acid": {
+    "synonyms": [
+      "F8889-5016",
+      "SR-01000854525-3",
+      "EDAE4876-C383-4AD4-A419-10C0550931DB",
+      "MYRISTIC ACID, VETEC(TM) REAGENT GRADE, 98%",
+      "EN300-78099",
+      "Q422658",
+      "SR-01000854525",
+      "C06424"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Citric Acid": {
+    "synonyms": [],
+    "risk": "Low",
+    "description": ""
+  },
+  "Salicylic Acid": {
+    "synonyms": [
+      "C00805",
+      "D00097"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Octocrylene": {
+    "synonyms": [
+      "TOX21_111153_1",
+      "MCULE-9077867311",
+      "NCGC00091585-06",
+      "NCGC00091585-04",
+      "AK-78708",
+      "AC-7027",
+      "CS-4296",
+      "CCG-268181",
+      "NCGC00091585-01"
+    ],
+    "risk": "Moderate",
+    "description": "Persistence and bioaccumulation (low_moderate), Ecotoxicology (low), Irritation (skin, eyes, or lungs) (low), Contamination concerns (high), and Biochemical or cellular level changes (high)"
+  },
+  "Butyl Methoxydibenzoylmethane": {
+    "synonyms": [
+      "BUTYLPHENYL METHOXYDIBENZOYLMETHANE"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Potassium Sorbate": {
+    "synonyms": [
+      "D02411",
+      "J-524028",
+      "2,4-HEXADIENOIC ACID, POTASSIUM SALT, (E,E)- (9CI)",
+      "Q410744",
+      "J-015607",
+      "A817411"
+    ],
+    "risk": "Moderate",
+    "description": ""
+  },
+  "Polysorbate 20": {
+    "synonyms": [],
+    "risk": "Low",
+    "description": ""
+  },
+  "Sodium Ascorbyl Phosphate": {
+    "synonyms": [
+      "SODIUM ASCORBYL PHOSPHATE",
+      "SODIUM L-ASCORBYL-2-PHOSPHATE"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Decyl Glucoside": {
+    "synonyms": [
+      "DS-3841",
+      "SCHEMBL43196",
+      "DTXSID30893008",
+      "6801-91-8",
+      "SC-21615",
+      "D-GLUCOSE DECYL OCTYL ETHER",
+      "AKOS016004985",
+      "41444-55-7",
+      "N-DECYL-D-GLUCOPYRANOSIDE",
+      "CTK8B9164"
+    ],
+    "risk": "Moderate",
+    "description": ""
+  },
+  "Kaolin": {
+    "synonyms": [
+      "LANGFORD",
+      "MCNAMEE",
+      "PARCLAY",
+      "PORCELAIN CLAY",
+      "SNOW TEX",
+      "KAOPAOUS",
+      "BOLUS ALBA",
+      "KAOLITE",
+      "KAOLINITE TYPE CLAY"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Alcohol Denat.": {
+    "synonyms": [
+      "Alcohol Denatured",
+      "SD ALCOHOL 1",
+      "DENATURED ALCOHOL, DESIGNATED BY THE GOVERNMENT",
+      "ALCOHOL DENATURED",
+      "ALCOHOL, COMPLETELY DENATURED",
+      "NOT DESIGNATED BY THE GOVERNMENT DENATURED ALCOHOL",
+      "DESIGNATED BY THE GOVERNMENT DENATURED ALCOHOL"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Ethylhexyl Salicylate": {
+    "synonyms": [
+      "2-Ethylhexyl Salicylate"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Titanium Dioxide": {
+    "synonyms": [],
+    "risk": "Low",
+    "description": ""
+  },
+  "Maltodextrin": {
+    "synonyms": [
+      "AB01274744_02",
+      "(2R,3S,4R,5R)-2,3,4,5,6-PENTAKIS(OXIDANYL)HEXANAL",
+      "SW220288-1",
+      "815-92-9",
+      "A828386",
+      "SC-11343",
+      "Q21036645",
+      "4-01-00-04302 (BEILSTEIN HANDBOOK REFERENCE)",
+      "D-(+)-GLUCOSE, 1M AQUEOUS SOLUTION, STERILE"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Bisabolol": {
+    "synonyms": [
+      "76738-75-5",
+      "U799YDE8BR",
+      "CHEBI:68658",
+      "ALPHA-BISABOLOL",
+      "UNII-U799YDE8BR",
+      "515-69-5"
+    ],
+    "risk": "Moderate",
+    "description": ""
+  },
+  "Sodium Lactate": {
+    "synonyms": [
+      "COMPOUND SOLUTION OF SODIUM LACTATE [INN]",
+      "SC-19308",
+      "W-104498",
+      "PROPANOIC ACID, 2-HYDROXY-, MONOSODIUM SALT (9CI)",
+      "O584",
+      "AK121770"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Talc": {
+    "synonyms": [
+      "P 3",
+      "COSMETIC TALC",
+      "FRENCH CHALK",
+      "TALC (MG3H2(SIO3)4)",
+      "MAGNESIUM SILICATE TALC",
+      "HYDROUS MAGNESIUM SILICATE",
+      "35592-05-3",
+      "DTXSID10189057",
+      "SILICIC ACID (H2SIO3), MAGNESIUM SALT (4:3)"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Allantoin": {
+    "synonyms": [
+      "AKOS016038547",
+      "DB11100",
+      "SDCCGMLS-0066595.P001",
+      "AKOS000120642",
+      "STL373778",
+      "TOX21_110395_1",
+      "1-(2,5-DIOXOIMIDAZOLIDIN-4-YL);UREA",
+      "CS-7741",
+      "MCULE-1008326286"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Sodium Chloride": {
+    "synonyms": [],
+    "risk": "Low",
+    "description": ""
+  },
+  "Lactic Acid": {
+    "synonyms": [],
+    "risk": "Low",
+    "description": ""
+  },
+  "Peg-12 Dimethicone": {
+    "synonyms": [],
+    "risk": "Low",
+    "description": ""
+  },
+  "Carbomer": {
+    "synonyms": [
+      "C00511",
+      "2-propenoic acid"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Benzophenone-4": {
+    "synonyms": [
+      "Sulisobenzone",
+      "5-Benzoyl-4-Hydroxy-2-Methoxybenzenesulfonic Acid"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Pyridoxine Hcl": {
+    "synonyms": [
+      "3,4-PYRIDINEDIMETHANOL, 5-HYDROXY-6-METHYL-, HYDRO",
+      "PYRIDOXINE HYDROCHLORIDE (B6), ANALYTICAL STANDARD",
+      "PYRIDOXIN HYDROCHLORIDE (VITAMIN B6 HYDROCHLORIDE)"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Calcium Pantothenate": {
+    "synonyms": [],
+    "risk": "Low",
+    "description": ""
+  },
+  "Sodium Starch Octenylsuccinate": {
+    "synonyms": [
+      "SODIUM CORN STARCH OCTENYLSUCCINATE",
+      "STARCH, HYDROGEN OCTENYLBUTANEDIOATE"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Betaine": {
+    "synonyms": [
+      "(TRIMETHYLAMMONIUMYL)ACETATE",
+      "CAPRYLIC AMIDOPROPYL BETAINE"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Sodium Citrate": {
+    "synonyms": [
+      "EINECS 242-734-6",
+      "CITROFLUYL",
+      "SODIUM DIHYDROGEN CITRATE",
+      "MONOSODIUM DIHYDROGEN CITRATE",
+      "CITRIC ACID, MONOSODIUM SALT (8CI)"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Panthenol": {
+    "synonyms": [],
+    "risk": "Low",
+    "description": ""
+  },
+  "Glutathione": {
+    "synonyms": [
+      ""
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Mica": {
+    "synonyms": [
+      "SERICITE GMS-C",
+      "SERICITE",
+      "PIGMENT WHITE 20",
+      "MUSCOVITE MICA",
+      "GOLDEN MICA",
+      "CI 77019",
+      "MICAGROUP MINERALS",
+      "POTASSIUM ALUMINUM SILICATE",
+      "SOAPSTONE"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Hydroxyethyl Acrylate/ Sodium Acryloyldimethyl Taurate Copolymer": {
+    "synonyms": [],
+    "risk": "Low",
+    "description": ""
+  },
+  "Benzyl Alcohol": {
+    "synonyms": [
+      "Alcohol Benzylicus"
+    ],
+    "risk": "High",
+    "description": ""
+  },
+  "Chlorphenesin": {
+    "synonyms": [
+      "1, 3-(P-CHLOROPHENOXY)-",
+      "OPREA1_755443",
+      "1, 3-(4-CHLOROPHENOXY)-",
+      "DSSTOX_CID_28954"
+    ],
+    "risk": "Moderate",
+    "description": ""
+  },
+  "Acrylates/C10 30 Alkyl Acrylate Crosspolymer": {
+    "synonyms": [
+      "ACRYLATES/ C10-30 ALKYL CROSSPOLYMER",
+      "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "C12-15 Alkyl Benzoate": {
+    "synonyms": [
+      "ALKYL (C12-15) BENZOATE",
+      "BENZOIC ACID, DODECYL ESTER",
+      "DODECYL BENZOATE",
+      "LAURYL BENZOATE",
+      "BENZOIC ACID, C12-15 ALKYL ESTERS",
+      "C12-15 ALKYL BENZOATE"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Polyacrylate Crosspolymer-6": {
+    "synonyms": [
+      "Polyacrylate Crosspolymer 6"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Polysorbate 60": {
+    "synonyms": [],
+    "risk": "Low",
+    "description": ""
+  },
+  "Ci 15985": {
+    "synonyms": [
+      "1899 YELLOW",
+      "1351 YELLOW",
+      "AIZEN FOOD YELLOW NO. 5",
+      "ACID YELLOW TRA",
+      "ALABASTER NO. 3",
+      "VITASYN ORANGE",
+      "FD&C YELLOW NO. 6 (CI 15985)"
+    ],
+    "risk": "Moderate",
+    "description": ""
+  },
+  "Ethylhexyl Methoxycinnamate": {
+    "synonyms": [
+      "2-Ethylhexyl 4-Methoxycinnamate"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Sodium Laureth Sulfate": {
+    "synonyms": [
+      "SODIUM POLYOXYETHYLENE (7) LAURYL ETHER SULFATE",
+      "SODIUM POLYOXYETHYLENE (12) LAURYL ETHER SULFATE"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Triethanolamine": {
+    "synonyms": [],
+    "risk": "Moderate",
+    "description": ""
+  },
+  "Phenylbenzimidazole Sulfonic Acid": {
+    "synonyms": [
+      "2-Phenyl-1H-Benzimidazole-5-Sulphonic Acid"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Hydrolyzed Sodium Hyaluronate": {
+    "synonyms": [
+      "SODIUM HYDROLYZED HYALURONATE"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Calcium Gluconate": {
+    "synonyms": [
+      "CALCIUM BIS(D-GLUCONATE)",
+      "BORON GLUCONATE BLEND 5% 40M",
+      "CALCIUM GLUCONATE, ANHYDROUS"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Gluconolactone": {
+    "synonyms": [],
+    "risk": "Low",
+    "description": ""
+  },
+  "Glyceryl Caprylate": {
+    "synonyms": [
+      "(RS)-1-OCTANOYLGLYCEROL",
+      "GLYCERYL OCTANOATE",
+      "RAC-1-MONOOCTANOYLGLYCEROL"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Cetearyl Glucoside": {
+    "synonyms": [
+      "CETEARYL POLYGLUCOSE"
+    ],
+    "risk": "Moderate",
+    "description": ""
+  },
+  "Dicaprylyl Carbonate": {
+    "synonyms": [
+      "CARBONIC ACID, DICAPRYLYL ESTER",
+      "DICAPRYLYL ESTER CARBONIC ACID",
+      "CARBONIC ACID, DIOCTYL ESTER"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Sodium Carbonate": {
+    "synonyms": [
+      "CARBONATE-BUFFERED SALINE (5X), PH 9.0",
+      "ANHYDROUS SODA"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Sodium Hyaluronate Crosspolymer": {
+    "synonyms": [],
+    "risk": "Low",
+    "description": ""
+  },
+  "4-Ethylresorcinol": {
+    "synonyms": [],
+    "risk": "Low",
+    "description": ""
+  },
+  "Dicaprylyl Ether": {
+    "synonyms": [
+      "1-(OCTYLOXY)-OCTANE"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Glycine Soja (Soybean) Oil": {
+    "synonyms": [
+      "SOYA-BEAN OIL",
+      "DEGUMMED SOYBEAN OIL",
+      "SOY OIL",
+      "OILS, SOYBEAN",
+      "SOYBEAN OILS",
+      "GLYCINE SOJA OIL",
+      "SOYA OIL",
+      "OIL OF SOYBEAN",
+      "SOYBEAN OIL"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Stearyl Alcohol": {
+    "synonyms": [
+      "Alcohol Stearylicus",
+      "Octadecan-1-Ol"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Centella Asiatica Extract": {
+    "synonyms": [
+      "Gotu Kola",
+      "Tiger Grass"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Benzophenone-3": {
+    "synonyms": [
+      "Oxybenzone"
+    ],
+    "risk": "Moderate",
+    "description": ""
+  },
+  "Methylparaben": {
+    "synonyms": [
+      "Methylis Parahydroxybenzoas",
+      "Methyl 4-Hydroxybenzoate"
+    ],
+    "risk": "Moderate",
+    "description": ""
+  },
+  "Bifida Ferment Lysate": {
+    "synonyms": [
+      "BIFIDOBACTERIUM LONGUM, LYSATE"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Sodium Pca": {
+    "synonyms": [
+      "Sodium Pyrrolidone Carboxylic Acid",
+      "SODIUM L-PYROGLUTAMATE"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Tocopherol": {
+    "synonyms": [
+      "Vitamin E"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Zingiber Officinale (Ginger) Root Extract": {
+    "synonyms": [
+      "ZINGIBER OFFICINALE ROOT EXTRACT",
+      "ZINGIBER OFFICINALE EXTRACT",
+      "GINGER (ZINGIBER OFFICINALE ROSC.)",
+      "GINGER ROOT EXTRACT",
+      "GINGER OLEORESIN (ZINGIBER OFFICINALE ROSC.)",
+      "GINGER EXTRACT (ZINGIBER OFFICINALE ROSC.)",
+      "GINGER EXTRACT",
+      "EXTRACT OF ZINGIBER OFFICINALE ROOT",
+      "EXTRACT OF GINGER ROOT",
+      "GINGER, EXT."
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Dipotassium Glycyrrhizate": {
+    "synonyms": [
+      "GLYCYRRHIZICACIDDIPOTASSIUMSALT",
+      "GLYCYRRHIZIC ACID DIPOTASSIUM SALT"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Ci 17200": {
+    "synonyms": [
+      "Red 33",
+      "D&C Red 33",
+      "Red 33 Lake",
+      "AMACID FUCHSINE 4B",
+      "ACID RED B",
+      "ACID RED 2A",
+      "ACID FUCHSIN FAST B",
+      "FAST ACID MAGENTA B",
+      "COLACID RED 2A"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Cyclopentasiloxane": {
+    "synonyms": [
+      "Decamethylcyclopentasiloxane"
+    ],
+    "risk": "Low",
+    "description": ""
+  },
+  "Peg-100 Stearate": {
+    "synonyms": [
+      "OCTADECANOIC ACID",
+      "POLYOXYETHYLENE MONOSTEARATE ESTER"
+    ],
+    "risk": "Low",
+    "description": ""
+  }
+}

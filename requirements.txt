@@ -1,0 +1,26 @@
+# py -3.9 -m pip install -r requirements.txt
+
+# NLP + Transformers
+transformers==4.40.1
+torch>=1.12.1
+sentencepiece
+
+# OCR dependencies
+pytesseract
+opencv-python
+Pillow
+
+# Utilities
+pandas
+numpy
+scikit-learn
+python-Levenshtein
+
+# Web UI
+streamlit
+
+# For file I/O
+requests
+
+# Flask
+flask-cors
