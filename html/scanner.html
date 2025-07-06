@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <style>
+    @font-face {
+      font-family: "Montserrat";
+      src: url("assets/fonts/MontserratAlternates-Regular.ttf");
+    }
+    body {
+      font-family: "Montserrat", sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-[#F8F2DE] px-4 pt-6 relative">
+
+  <!-- Back Button -->
+  <a href="homepage.html" class="absolute top-4 left-4 text-[#D84040]">
+    <i data-feather="arrow-left" class="w-6 h-6"></i>
+  </a>
+
+  <div class="max-w-5xl mx-auto space-y-6">
+    <h2 class="text-2xl font-bold text-primary text-center">Scan Your Product</h2>
+
+    <div class="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-10">
+
+      <!-- Camera Column -->
+      <div class="flex flex-col items-center gap-4 flex-shrink-0">
+        <div class="bg-[#EFCCBD] rounded-xl border-[20px] border-[#EFCCBD] overflow-hidden box-content
+                    w-[260px] h-[440px] sm:w-[280px] sm:h-[480px] md:w-[300px] md:h-[520px]">
+          <video id="camera" autoplay playsinline class="w-full h-full object-cover"></video>
+        </div>
+        <div class="flex justify-center items-center gap-4">
+          <button id="flashBtn" class="p-2 rounded-full bg-button text-white hover:brightness-110">
+            <i data-feather="zap"></i>
+          </button>
+          <button id="flipBtn" class="p-2 rounded-full bg-button text-white hover:brightness-110">
+            <i data-feather="refresh-ccw"></i>
+          </button>
+          <button id="captureBtn" class="p-2 rounded-full bg-button text-white hover:brightness-110">
+            <i data-feather="camera"></i>
+          </button>
+          <label class="p-2 rounded-full bg-button text-white hover:brightness-110 cursor-pointer">
+            <i data-feather="image"></i>
+            <input id="fileInput" type="file" accept="image/*" class="hidden"/>
+          </label>
+        </div>
+      </div>
+
+      <!-- Preview Column -->
+      <div id="previewContainer" class="hidden flex flex-col items-center lg:items-start mt-6 lg:mt-0">
+        <h3 class="font-semibold text-primary mb-2 text-center lg:text-left">Preview</h3>
+        <img id="preview" class="rounded-xl shadow-md w-[240px] sm:w-[260px] md:w-[300px] h-auto object-contain"/>
+      </div>
+    </div>
+
+    <!-- Process Button -->
+    <div class="flex justify-center">
+      <button id="scanBtn"
+              class="w-[240px] bg-button text-white px-4 py-3 rounded-xl opacity-50 cursor-not-allowed"
+              disabled>
+        Process
+      </button>
+    </div>
+  </div>
+
+  <script>
+    feather.replace();
+
+    let imageBlob = null;
+    const video       = document.getElementById('camera');
+    const captureBtn  = document.getElementById('captureBtn');
+    const fileInput   = document.getElementById('fileInput');
+    const previewImg  = document.getElementById('preview');
+    const previewWrap = document.getElementById('previewContainer');
+    const scanBtn     = document.getElementById('scanBtn');
+
+    // 1) Start back camera
+    async function startCamera() {
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } });
+        video.srcObject = stream;
+      } catch {
+        video.replaceWith(Object.assign(document.createElement("p"), {
+          innerText: "Camera not available. Please upload an image instead.",
+          className: "text-primary font-medium"
+        }));
+      }
+    }
+    window.onload = startCamera;
+
+    // 2) Capture frame
+    captureBtn.onclick = () => {
+      const canvas = document.createElement('canvas');
+      canvas.width  = video.videoWidth;
+      canvas.height = video.videoHeight;
+      canvas.getContext('2d').drawImage(video, 0, 0);
+      canvas.toBlob(blob => {
+        imageBlob = blob;
+        previewImg.src = URL.createObjectURL(blob);
+        previewWrap.classList.remove('hidden');
+        enableProcess();
+      }, 'image/jpeg');
+    };
+
+    // 3) Gallery pick
+    fileInput.onchange = (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      imageBlob = file;
+      previewImg.src = URL.createObjectURL(file);
+      previewWrap.classList.remove('hidden');
+      enableProcess();
+    };
+
+    function enableProcess() {
+      scanBtn.disabled = false;
+      scanBtn.classList.remove('opacity-50','cursor-not-allowed');
+    }
+
+    // 4) Send to Flask
+    scanBtn.onclick = async () => {
+      if (!imageBlob) return;
+      scanBtn.innerText = 'Processing…';
+      scanBtn.disabled  = true;
+
+      const form = new FormData();
+      form.append('image', imageBlob, 'upload.jpg');
+
+      try {
+        const res  = await fetch('http://localhost:5000/api/scan', {
+          method: 'POST',
+          body: form
+        });
+        const data = await res.json();
+
+        // Save everything for ingredientlist.html
+        localStorage.setItem('crop_src',       data.crop_image);
+        localStorage.setItem('all_ingredients',JSON.stringify(data.all_ingredients));
+        localStorage.setItem('allergen_details',JSON.stringify(data.allergen_details));
+        localStorage.setItem('risk_level',      data.risk_level);
+
+        window.location.href = 'ingredientlist.html';
+      } catch {
+        alert('Error processing image');
+        scanBtn.disabled = false;
+      } finally {
+        scanBtn.innerText = 'Process';
+      }
+    };
+  </script>
+</body>
+</html>

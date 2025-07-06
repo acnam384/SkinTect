@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ingredients & Allergens</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="min-h-screen bg-[#F8F2DE] flex items-center justify-center px-4 py-8">
+  <div class="w-full max-w-lg bg-white p-6 rounded-xl shadow-md space-y-6">
+
+    <!-- 1) Cropped Preview -->
+    <div class="flex justify-center">
+      <img id="finalPreview"
+           class="rounded-xl shadow-md w-64 h-auto object-contain"/>
+    </div>
+
+    <!-- 2) Overall Risk Level -->
+    <div id="riskWrap" class="text-center">
+      <h2 class="text-2xl font-bold text-primary">Risk Level:</h2>
+      <span id="riskLevel"
+            class="inline-block mt-1 text-lg font-semibold px-4 py-2 rounded-full bg-red-100 text-red-700">
+      </span>
+    </div>
+
+    <!-- 3) Collapsed “Detected Ingredients” -->
+    <details class="p-4 bg-gray-50 rounded-lg">
+      <summary class="font-semibold text-lg text-primary cursor-pointer">
+        Detected Ingredients
+      </summary>
+      <ul id="ingredientList"
+          class="mt-2 list-disc list-inside text-primary space-y-1">
+        <!-- populated by JS -->
+      </ul>
+    </details>
+
+    <!-- 4) Collapsed “Detected Allergens” -->
+    <details class="p-4 bg-red-50 rounded-lg">
+      <summary class="font-semibold text-lg text-red-700 cursor-pointer">
+        Detected Allergens
+      </summary>
+      <ul id="allergenList"
+          class="mt-2 list-disc list-inside text-red-700 space-y-1">
+        <!-- populated by JS -->
+      </ul>
+    </details>
+
+    <!-- 5) Back button -->
+    <div class="text-center">
+      <a href="scanner.html"
+         class="inline-block bg-button text-white px-6 py-2 rounded-xl hover:brightness-110">
+        ← Scan Another
+      </a>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1) Preview
+      const imgSrc = localStorage.getItem('crop_src');
+      if (imgSrc) {
+        document.getElementById('finalPreview').src = imgSrc;
+      }
+
+      // 2) Risk level
+      const risk = localStorage.getItem('risk_level') || 'N/A';
+      const riskEl = document.getElementById('riskLevel');
+      riskEl.textContent = risk.charAt(0) + risk.slice(1).toLowerCase();
+
+      // color-code badge
+      riskEl.classList.remove('bg-red-100','bg-red-200','bg-yellow-200','bg-green-200','bg-gray-200');
+      if (risk === 'HIGH')         riskEl.classList.add('bg-red-200');
+      else if (risk === 'MODERATE')riskEl.classList.add('bg-yellow-200');
+      else if (risk === 'LOW')     riskEl.classList.add('bg-green-200');
+      else                         riskEl.classList.add('bg-gray-200');
+
+      // 3) Detected Ingredients
+      let ing = [];
+      try {
+        ing = JSON.parse(localStorage.getItem('all_ingredients') || '[]');
+      } catch {}
+
+      ing = ing
+        .map(item => {
+          // just remove any "may contain" clause
+          return item.split(/may contain/i)[0].trim();
+        })
+        .filter(item => item.length > 0);
+
+      const ulI = document.getElementById('ingredientList');
+      if (ing.length) {
+        ing.forEach(name => {
+          const li = document.createElement('li');
+          li.textContent = name;
+          ulI.appendChild(li);
+        });
+      } else {
+        ulI.innerHTML = '<li>No ingredients detected.</li>';
+      }
+
+      // 4) Detected Allergens
+      let alg = [];
+      try {
+        alg = JSON.parse(localStorage.getItem('allergen_details') || '[]');
+      } catch {}
+
+      const ulA = document.getElementById('allergenList');
+      if (alg.length) {
+        alg.forEach(a => {
+          const li = document.createElement('li');
+          li.textContent = `${a.name} (Risk: ${a.risk})`;
+          ulA.appendChild(li);
+        });
+      } else {
+        ulA.innerHTML = '<li>No allergens detected.</li>';
+      }
+    });
+  </script>
+</body>
+</html>
