@@ -2,6 +2,7 @@
 
 **SkinTect** is a real-time allergen detection system for cosmetic products using OCR and Natural Language Processing. It extracts ingredient information from product labels and identifies allergens using BioBERT.
 
+**Documentation Link:** https://docs.google.com/document/d/15KwOLmXS3Ya4KFxwTi3ZxIWOWZit0VPNRJMdIuLYXEc/edit?usp=sharing
 ---
 
 ## Technologies Used
